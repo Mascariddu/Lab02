@@ -58,11 +58,11 @@ public class AlienController {
     		} else this.txtResult.appendText("Formato errato!\n");
     		} else this.txtResult.appendText("Formato errato!\n");
     	} else {
-    		if(word.matches("[a-zA-Z]+")) {
+    		//if(word.matches("[a-zA-Z]+")) {
     			if(d.translate(word) != null)
     				txtResult.appendText(d.translate(word)+"\n");
     			else txtResult.appendText("Parola senza traduzione!\n");
-    		} else this.txtResult.appendText("Formato errato!\n");
+    		//} else this.txtResult.appendText("Formato errato!\n");
     	}
     	this.txtWord.clear();
     }
